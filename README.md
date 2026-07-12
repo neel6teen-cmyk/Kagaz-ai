@@ -12,5 +12,9 @@ When citizens receive official municipality notices, bank default letters, or le
 ## 🚀 How to Run
 This application is designed to run in a Kaggle Notebook environment. 
 1. Open a Kaggle Notebook with a T4 GPU enabled.
-2. Install dependencies: `!pip install gradio accelerate kagglehub`
-3. Run the `app.py` script to launch the local web server.
+2. In your first cell, install the required development dependencies and auto-restart the kernel: 
+   ```python
+   import os
+   !pip install -q -U git+[https://github.com/huggingface/transformers.git](https://github.com/huggingface/transformers.git)
+   !pip install -q -U gradio accelerate kagglehub
+   os._exit(00)
